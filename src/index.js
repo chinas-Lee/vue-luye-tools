@@ -5,5 +5,6 @@ import _Check from './package/check.js'
 
 const _Tools = Object.assign({},
 _Check)
+_Tools
 
-export default _Tools
+module.exports = _Tools
