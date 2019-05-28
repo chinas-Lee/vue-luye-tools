@@ -1,0 +1,41 @@
+{
+  "name": "vue-luye-tools",
+  "version": "0.0.2",
+  "description": "common tools",
+  "main": "dist/vue-luye-tools.min.js",
+  "scripts": {
+    "build": "node_modules/gulp/bin/gulp.js",
+    "test": "node --experimental-modules test/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinas-Lee/vue-luye-tools.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "vue": "^2.6.8"
+  },
+  "author": "LCQ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinas-Lee/vue-luye-tools/issues"
+  },
+  "homepage": "https://github.com/chinas-Lee/vue-luye-tools#readme",
+  "peerDependencies": {
+    "vue": ">= 2.0.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
