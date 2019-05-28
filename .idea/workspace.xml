@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bacc6ae7-57b5-470e-a814-eb7053120d67" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/vue-luye-tools.es5.js" afterPath="$PROJECT_DIR$/dist/vue-luye-tools.es5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/vue-luye-tools.min.js" afterPath="$PROJECT_DIR$/dist/vue-luye-tools.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,8 +37,18 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="293">
-              <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="11" />
-              <folding />
+              <caret line="40" column="11" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="11" />
+              <folding>
+                <marker date="1559056934273" expanded="true" signature="0:1013" ph="{&quot;name&quot;: &quot;vue-luye-tools&quot;...}" />
+                <marker date="1559056934273" expanded="true" signature="138:246" ph="{&quot;build&quot;: &quot;node_modules/gulp/bin/gulp.js&quot;...}" />
+                <marker date="1559056934273" expanded="true" signature="264:354" ph="{&quot;type&quot;: &quot;git&quot;...}" />
+                <marker date="1559056934273" expanded="true" signature="377:576" ph="{&quot;@babel/core&quot;: &quot;^7.3.4&quot;...}" />
+                <marker date="1559056934273" expanded="true" signature="627:697" ph="{&quot;url&quot;: &quot;https://github.com/chinas-Lee/vue-luye-tools/issues&quot;...}" />
+                <marker date="1559056934273" expanded="true" signature="790:817" ph="{&quot;vue&quot;: &quot;&gt;= 2.0.0&quot;...}" />
+                <marker date="1559056934273" expanded="true" signature="832:883" ph="{&quot;node&quot;: &quot;&gt;= 6.0.0&quot;...}" />
+                <marker date="1559056934273" expanded="true" signature="903:961" ph="[...]" />
+                <marker date="1559056934273" expanded="true" signature="981:1011" ph="{&quot;lodash&quot;: &quot;^4.17.11&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,9 +56,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="25">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="23" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -355,12 +364,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559051465240</updated>
-      <workItem from="1559051466798" duration="5408000" />
+      <workItem from="1559051466798" duration="5652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5408000" />
+    <option name="totallyTimeSpent" value="5652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -373,7 +382,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="952" y="0" width="976" height="1038" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22473118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -383,7 +392,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46391752" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -442,16 +451,18 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
-          <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="23" />
-          <folding />
+          <caret line="40" column="11" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="11" />
+          <folding>
+            <marker date="1559056934273" expanded="true" signature="0:1013" ph="{&quot;name&quot;: &quot;vue-luye-tools&quot;...}" />
+            <marker date="1559056934273" expanded="true" signature="138:246" ph="{&quot;build&quot;: &quot;node_modules/gulp/bin/gulp.js&quot;...}" />
+            <marker date="1559056934273" expanded="true" signature="264:354" ph="{&quot;type&quot;: &quot;git&quot;...}" />
+            <marker date="1559056934273" expanded="true" signature="377:576" ph="{&quot;@babel/core&quot;: &quot;^7.3.4&quot;...}" />
+            <marker date="1559056934273" expanded="true" signature="627:697" ph="{&quot;url&quot;: &quot;https://github.com/chinas-Lee/vue-luye-tools/issues&quot;...}" />
+            <marker date="1559056934273" expanded="true" signature="790:817" ph="{&quot;vue&quot;: &quot;&gt;= 2.0.0&quot;...}" />
+            <marker date="1559056934273" expanded="true" signature="832:883" ph="{&quot;node&quot;: &quot;&gt;= 6.0.0&quot;...}" />
+            <marker date="1559056934273" expanded="true" signature="903:961" ph="[...]" />
+            <marker date="1559056934273" expanded="true" signature="981:1011" ph="{&quot;lodash&quot;: &quot;^4.17.11&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -465,11 +476,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/lodash/lodash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-453165">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="25">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

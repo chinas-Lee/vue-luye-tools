@@ -1,7 +1,7 @@
 /**
  * Created by LCQ on 2019-05-28,0028.
  */
-import _VueTools from './src/index'
+let _VueTools = require( './src/index')
 
 const genericInstall = (Vue) => {
     Vue._VueTools = _VueTools

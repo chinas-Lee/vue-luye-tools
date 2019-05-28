@@ -5,18 +5,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _index = _interopRequireDefault(require("./src/index"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+/**
+ * Created by LCQ on 2019-05-28,0028.
+ */
+var _VueTools = require('./src/index');
+
 var genericInstall = function genericInstall(Vue) {
-  Vue._VueTools = _index.default;
+  Vue._VueTools = _VueTools;
   Object.defineProperties(Vue.prototype, {
     _VueTools: {
       get: function get() {
-        return _index.default;
+        return _VueTools;
       }
     }
   });
@@ -25,10 +26,10 @@ var genericInstall = function genericInstall(Vue) {
 var VueLuyeTools = {
   install: function install(Vue, options) {
     if (options && options.name) {
-      Vue[options.name] = _index.default;
+      Vue[options.name] = _VueTools;
       Object.defineProperties(Vue.prototype, _defineProperty({}, options.name, {
         get: function get() {
-          return _index.default;
+          return _VueTools;
         }
       }));
     }
