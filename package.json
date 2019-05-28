@@ -1,6 +1,6 @@
 {
   "name": "vue-luye-tools",
-  "version": "0.0.3-0",
+  "version": "0.0.3-1",
   "description": "common tools",
   "main": "dist/vue-luye-tools.min.js",
   "scripts": {
