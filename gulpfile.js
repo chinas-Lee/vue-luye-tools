@@ -7,12 +7,12 @@ const uglify = require('gulp-uglifyjs')
 const rename = require('gulp-rename')
 
 gulp.task('default', () => {
-    return gulp.src('index.js')
+    return gulp.src('src/index.mjs')
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        .pipe(rename('vue-luye-tools.es5.js'))
-        .pipe(gulp.dest('dist'))
+        // .pipe(rename('vue-luye-tools.es5.js'))
+        // .pipe(gulp.dest('dist'))
         .pipe(uglify())
         .pipe(rename('vue-luye-tools.min.js'))
         .pipe(gulp.dest('dist'))

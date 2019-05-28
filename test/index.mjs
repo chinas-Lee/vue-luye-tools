@@ -2,15 +2,14 @@
  * Created by LCQ on 2019-05-28,0028.
  */
 import Vue from 'vue'
-import _Tools from '../src/index.js'
+import VueLuyeTools from '../src/index.mjs'
 
-Vue.use(_Tools, { name: '_Tools' })
-
+Vue.use(VueLuyeTools, { name: 'VueLuyeTools' })
 const testWithoutOption = new Vue({
     methods: {
         run() {
-            Vue._Tools._isNull(20)
-            this._Tools._isNull(20)
+            console.log(Vue.VueLuyeTools._isNull(20))
+            console.log(this.VueLuyeTools._isNull(20))
         }
     }
 })
@@ -19,9 +18,8 @@ testWithoutOption.run()
 const testWithOption = new Vue({
     methods: {
         run() {
-            Vue._Tools._isNull(20)
-            this._Tools._isNull(20)
+            Vue.VueLuyeTools._isNull(20)
+            this.VueLuyeTools._isNull(20)
         }
     }
 })
-testWithOption.run()

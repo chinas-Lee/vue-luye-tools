@@ -110,4 +110,4 @@ const Check = {
     }
 }
 
-export default Check
+module.exports = Check
