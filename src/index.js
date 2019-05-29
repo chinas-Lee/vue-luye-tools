@@ -2,6 +2,8 @@
  * Created by LCQ on 2019-05-28,0028.
  */
 const VueTools = {
+    // 版本
+    VERSION: '1.0.0',
     /*
      * 验证函数
      * return Boolean

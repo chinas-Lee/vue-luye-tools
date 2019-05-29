@@ -13,7 +13,7 @@ gulp.task('default', () => {
         }))
         // .pipe(rename('vue-luye-tools.es5.js'))
         // .pipe(gulp.dest('dist'))
-        .pipe(uglify())
-        .pipe(rename('vue-luye-tools.min.js'))
-        .pipe(gulp.dest('dist'))
+        .pipe(uglify()) // 压缩
+        .pipe(rename('vue-luye-tools.min.js')) // 重命名
+        .pipe(gulp.dest('dist')) // 目标目录
 })
