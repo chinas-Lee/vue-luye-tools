@@ -41,33 +41,33 @@ let config = {
 }
 
 const genericInstall = (Vue) => {
-    // Vue._VueTools = AllModule
-    Object.defineProperties(Vue.prototype, {
-        _vueTools: {
-            get () {
-                return AllModule
-            },
-            set () {
-                console.warn(config.errorMsg)
-            }
-        }
-    })
+    Vue._VueTools = AllModule
+    // Object.defineProperties(Vue.prototype, {
+    //     _vueTools: {
+    //         get () {
+    //             return AllModule
+    //         },
+    //         set () {
+    //             console.warn(config.errorMsg)
+    //         }
+    //     }
+    // })
 }
 
 const _vueTools = {
     install (Vue, options) {
         if (options && options.name) {
-            // Vue[options.name] = AllModule
-            Object.defineProperties(Vue.prototype, {
-                [options.name]: {
-                    get () {
-                        return AllModule
-                    },
-                    set () {
-                        console.warn(config.errorMsg)
-                    }
-                }
-            })
+            Vue[options.name] = AllModule
+            // Object.defineProperties(Vue.prototype, {
+            //     [options.name]: {
+            //         get () {
+            //             return AllModule
+            //         },
+            //         set () {
+            //             console.warn(config.errorMsg)
+            //         }
+            //     }
+            // })
         }
         genericInstall(Vue)
         Vue.mixin({
