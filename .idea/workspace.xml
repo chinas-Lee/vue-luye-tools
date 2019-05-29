@@ -98,8 +98,8 @@
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="679" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-6" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -173,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="Gulp.js.gulp">
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
