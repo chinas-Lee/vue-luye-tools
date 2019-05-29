@@ -865,7 +865,7 @@ const genericInstall = (Vue) => {
             get () {
                 return Tools
             },
-            set (val) {
+            set () {
                 console.error(config.errorMsg)
             }
         }
