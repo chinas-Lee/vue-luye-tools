@@ -853,34 +853,38 @@ const VueTools = {
     },
 }
 
+const config = {
+    errorMsg: 'This method prohibits changes'
+}
+
 const genericInstall = (Vue) => {
-    Vue._VueTools = VueTools
-    // Object.defineProperties(Vue.prototype, {
-    //     _vueTools: {
-    //         get () {
-    //             return AllModule
-    //         },
-    //         set () {
-    //             console.warn(config.errorMsg)
-    //         }
-    //     }
-    // })
+    // Vue._VueTools = VueTools
+    Object.defineProperties(Vue.prototype, {
+        _vueTools: {
+            get () {
+                return VueTools
+            },
+            set () {
+                console.warn(config.errorMsg)
+            }
+        }
+    })
 }
 
 const _vueTools = {
     install (Vue, options) {
         if (options && options.name) {
-            Vue[options.name] = VueTools
-            // Object.defineProperties(Vue.prototype, {
-            //     [options.name]: {
-            //         get () {
-            //             return AllModule
-            //         },
-            //         set () {
-            //             console.warn(config.errorMsg)
-            //         }
-            //     }
-            // })
+            //Vue[options.name] = VueTools
+            Object.defineProperties(Vue.prototype, {
+                [options.name]: {
+                    get () {
+                        return VueTools
+                    },
+                    set () {
+                        console.warn(config.errorMsg)
+                    }
+                }
+            })
         }
         genericInstall(Vue)
         Vue.mixin({
