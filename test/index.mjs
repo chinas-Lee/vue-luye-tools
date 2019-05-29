@@ -6,8 +6,6 @@ import VueLuyeTools from '../src/index.mjs'
 
 Vue.use(VueLuyeTools, { name: 'VueLuyeTools' })
 
-console.log(VueLuyeTools)
-
 const testWithoutOption = new Vue({
     methods: {
         run() {

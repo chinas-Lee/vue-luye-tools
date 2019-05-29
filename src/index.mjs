@@ -3,6 +3,8 @@
  */
 import _VueTools from './package/check.js'
 
+console.log(_VueTools)
+
 const genericInstall = (Vue) => {
     Vue._VueTools = _VueTools
     Object.defineProperties(Vue.prototype, {
