@@ -36,19 +36,37 @@ const AllModule = {
     }
 }
 
+let config = {
+    errorMsg: 'This method prohibits modification'
+}
+
 const genericInstall = (Vue) => {
-    Vue._VueTools = AllModule
+    // Vue._VueTools = AllModule
     Object.defineProperties(Vue.prototype, {
-        _vueTools: { get() { return AllModule } }
+        _vueTools: {
+            get () {
+                return AllModule
+            },
+            set () {
+                console.warn(config.errorMsg)
+            }
+        }
     })
 }
 
 const _vueTools = {
     install (Vue, options) {
         if (options && options.name) {
-            Vue[options.name] = AllModule
+            // Vue[options.name] = AllModule
             Object.defineProperties(Vue.prototype, {
-                [options.name]: { get() { return AllModule } }
+                [options.name]: {
+                    get () {
+                        return AllModule
+                    },
+                    set () {
+                        console.warn(config.errorMsg)
+                    }
+                }
             })
         }
         genericInstall(Vue)
