@@ -82,32 +82,37 @@
 //     _checkAllNumber
 // }
 
-const Check = {
-    // 判断是否为空 ''/null/undefined
-    _isNull (val) {
-        try {
-            if (val === '' || val === null || val === undefined) {
-                return true
+;(function () {
+    const _VueTools = {
+        // 判断是否为空 ''/null/undefined
+        _isNull (val) {
+            try {
+                if (val === '' || val === null || val === undefined) {
+                    return true
+                }
+                return false
+            } catch (err) {
+                console.log(err)
+                return false
             }
-            return false
-        } catch (err) {
-            console.log(err)
-            return false
-        }
-    },
-    // 验证输入值是否全由数字组成
-    _checkAllNumber (value) {
-        try {
-            let res = /^[0-9]{1,20}$/
-            if (res.exec(+value)) {
-                return true
+        },
+        // 验证输入值是否全由数字组成
+        _checkAllNumber (value) {
+            try {
+                let res = /^[0-9]{1,20}$/
+                if (res.exec(+value)) {
+                    return true
+                }
+                return false
+            } catch (err) {
+                console.log(err)
+                return false
             }
-            return false
-        } catch (err) {
-            console.log(err)
-            return false
         }
     }
-}
-
-module.exports = Check
+    if (typeof exports !== 'undefined') {
+        exports._VueTools = _VueTools
+    } else {
+        this._VueTools = _VueTools
+    }
+}).call(this)
