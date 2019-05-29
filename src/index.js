@@ -2,7 +2,7 @@
  * Created by LCQ on 2019-05-28,0028.
  */
 class VueTools {
-    constructor (config) {
+    constructor (config ={}) {
         this.config = config
     }
     // 验证手机号
@@ -76,9 +76,10 @@ class VueTools {
 let config = {
     errorMsg: 'This method prohibits modification'
 }
+let vueTools = new VueTools()
 
 const genericInstall = (Vue) => {
-    Vue._VueTools = new VueTools()
+    Vue._VueTools = vueTools
     // Object.defineProperties(Vue.prototype, {
     //     _vueTools: {
     //         get () {
@@ -94,7 +95,7 @@ const genericInstall = (Vue) => {
 const _vueTools = {
     install (Vue, options) {
         if (options && options.name) {
-            Vue[options.name] = new VueTools()
+            Vue[options.name] = vueTools
             // Object.defineProperties(Vue.prototype, {
             //     [options.name]: {
             //         get () {
