@@ -28,20 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/package/check.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
-              <caret line="113" column="23" lean-forward="true" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://C:/Windows/System32/drivers/etc/hosts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <caret line="113" selection-start-line="113" selection-end-line="114" />
             </state>
           </provider>
         </entry>
@@ -258,12 +249,12 @@
       <updated>1559051465240</updated>
       <workItem from="1559051466798" duration="7759000" />
       <workItem from="1559091285284" duration="2504000" />
-      <workItem from="1559101066476" duration="8095000" />
+      <workItem from="1559101066476" duration="8348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18358000" />
+    <option name="totallyTimeSpent" value="18611000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,7 +267,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.109375" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -285,7 +275,7 @@
       <window_info id="Gulp" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46755406" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46721312" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -370,13 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/package/check.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="113" column="23" lean-forward="true" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -388,6 +371,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package/check.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="113" selection-start-line="113" selection-end-line="114" />
         </state>
       </provider>
     </entry>
