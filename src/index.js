@@ -1,7 +1,7 @@
 /**
  * Created by LCQ on 2019-05-28,0028.
  */
-const VueTools = {
+const Tools = {
     // 版本
     VERSION: '1.0.0',
     /*
@@ -860,11 +860,10 @@ const config = {
 }
 
 const genericInstall = (Vue) => {
-    // Vue._VueTools = VueTools
     Object.defineProperties(Vue.prototype, {
-        _vueTools: {
+        _tools: {
             get () {
-                return VueTools
+                return Tools
             },
             set (val) {
                 console.error(config.errorMsg)
@@ -873,14 +872,14 @@ const genericInstall = (Vue) => {
     })
 }
 
-const _vueTools = {
+const _Tools = {
     install (Vue, options) {
         if (options && options.name) {
-            //Vue[options.name] = VueTools
+            //Vue[options.name] = Tools
             Object.defineProperties(Vue.prototype, {
                 [options.name]: {
                     get () {
-                        return VueTools
+                        return Tools
                     },
                     set (val) {
                         console.error(config.errorMsg)
@@ -896,9 +895,9 @@ const _vueTools = {
             }
         })
         if (typeof window !== 'undefined' && window.Vue) {
-            window.Vue.use(_vueTools)
+            window.Vue.use(_Tools)
         }
     }
 }
 
-exports = module.exports = _vueTools
+exports = module.exports = _Tools
