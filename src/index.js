@@ -864,8 +864,8 @@ const genericInstall = (Vue) => {
             get () {
                 return VueTools
             },
-            set () {
-                console.warn(config.errorMsg)
+            set (val) {
+                console.error(config.errorMsg)
             }
         }
     })
@@ -880,8 +880,8 @@ const _vueTools = {
                     get () {
                         return VueTools
                     },
-                    set () {
-                        console.warn(config.errorMsg)
+                    set (val) {
+                        console.error(config.errorMsg)
                     }
                 }
             })
