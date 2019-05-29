@@ -7,7 +7,7 @@ const uglify = require('gulp-uglifyjs')
 const rename = require('gulp-rename')
 
 gulp.task('default', () => {
-    return gulp.src('src/index.mjs')
+    return gulp.src('src/index.js')
         .pipe(babel({
             presets: ['@babel/env']
         }))
