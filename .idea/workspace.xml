@@ -32,76 +32,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="845" column="5" lean-forward="true" selection-start-line="845" selection-start-column="5" selection-end-line="845" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!doc;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#constructor#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_checkPhone#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_checkEmail#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_isNullObj#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_isNull#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_checkAllNumber#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_getDate#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_getTimeStamp#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_timeStampToDateTime#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_dateTimeToTimeStamp#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_UTCTimeToDateTime#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_dateToDate#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_formatBirth#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_getBirthAge#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_getDataType#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_uniqueArray#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_uniqueArrayAttributes#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_sortArr#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_sortArray#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_customSortArray#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_clearEmptyArray#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_deepCopy#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_setLocalStorage#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_getLocalStorage#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_getLocalStorageObject#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_removeLocalStorage#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_removeMultipleLocalStorage#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_setSessionStorage#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_getSessionStorage#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_getSessionStorageObject#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_removeSessionStorage#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_removeMultipleSessionStorage#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_trim#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_getSpecStr#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_setStars#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_formatStr#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_insertStr#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_showEllipsis#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_auth#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_isManager#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_debounce#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_throttle#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_handleFileStream#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_goTop#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_disableConsole#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_getQueryParam#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_isMobile#0;n#VueTools#0" expanded="false" />
-                <element signature="n#!!block;n#_setTitle#0;n#VueTools#0" expanded="false" />
-                <element signature="e#24835#24857#0" expanded="false" />
-                <element signature="e#25940#25983#0" expanded="false" />
-                <element signature="e#26343#26386#0" expanded="false" />
-                <element signature="e#26735#26881#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="-407">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vue-luye-tools.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/vue-luye-tools.min.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="50">
+              <caret line="869" column="15" lean-forward="false" selection-start-line="869" selection-start-column="6" selection-end-line="869" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+                <element signature="e#151#525#0" expanded="false" />
+                <element signature="e#561#929#0" expanded="false" />
+                <element signature="e#968#1180#0" expanded="false" />
+                <element signature="e#1232#1475#0" expanded="false" />
+                <element signature="e#1526#1776#0" expanded="false" />
+                <element signature="e#1882#3599#0" expanded="false" />
+                <element signature="e#3637#3786#0" expanded="false" />
+                <element signature="e#3860#5267#0" expanded="false" />
+                <element signature="e#5323#5619#0" expanded="false" />
+                <element signature="e#5711#6128#0" expanded="false" />
+                <element signature="e#6198#7585#0" expanded="false" />
+                <element signature="e#7635#8425#0" expanded="false" />
+                <element signature="e#8468#8802#0" expanded="false" />
+                <element signature="e#8893#9894#0" expanded="false" />
+                <element signature="e#9933#10945#0" expanded="false" />
+                <element signature="e#11010#11515#0" expanded="false" />
+                <element signature="e#11565#11740#0" expanded="false" />
+                <element signature="e#11778#12040#0" expanded="false" />
+                <element signature="e#12097#12732#0" expanded="false" />
+                <element signature="e#12793#13194#0" expanded="false" />
+                <element signature="e#13230#14093#0" expanded="false" />
+                <element signature="e#14202#14501#0" expanded="false" />
+                <element signature="e#14557#14651#0" expanded="false" />
+                <element signature="e#14712#14917#0" expanded="false" />
+                <element signature="e#14972#15076#0" expanded="false" />
+                <element signature="e#15146#15541#0" expanded="false" />
+                <element signature="e#15606#15880#0" expanded="false" />
+                <element signature="e#15940#16036#0" expanded="false" />
+                <element signature="e#16101#16308#0" expanded="false" />
+                <element signature="e#16369#16475#0" expanded="false" />
+                <element signature="e#16549#16947#0" expanded="false" />
+                <element signature="e#17041#17338#0" expanded="false" />
+                <element signature="e#17496#17752#0" expanded="false" />
+                <element signature="e#17918#18302#0" expanded="false" />
+                <element signature="e#18489#19005#0" expanded="false" />
+                <element signature="e#19171#19734#0" expanded="false" />
+                <element signature="e#19887#20289#0" expanded="false" />
+                <element signature="e#20543#20788#0" expanded="false" />
+                <element signature="e#20914#21404#0" expanded="false" />
+                <element signature="e#21609#22008#0" expanded="false" />
+                <element signature="e#22055#22604#0" expanded="false" />
+                <element signature="e#22778#23709#0" expanded="false" />
+                <element signature="e#23824#24287#0" expanded="false" />
+                <element signature="e#24418#25069#0" expanded="false" />
+                <element signature="e#25115#25455#0" expanded="false" />
+                <element signature="e#25492#25894#0" expanded="false" />
+                <element signature="e#25955#26159#0" expanded="false" />
+                <element signature="e#26231#26274#0" expanded="false" />
+                <element signature="e#26634#26677#0" expanded="false" />
+                <element signature="e#27026#27172#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,6 +133,7 @@
       <find>=&gt;</find>
       <find>const</find>
       <find>=&gt;</find>
+      <find>config.errorMsg</find>
     </findStrings>
     <replaceStrings>
       <replace>Check</replace>
@@ -393,12 +392,12 @@
       <option name="presentableId" value="Default" />
       <updated>1559051465240</updated>
       <workItem from="1559051466798" duration="7843000" />
-      <workItem from="1559134118387" duration="8139000" />
+      <workItem from="1559134118387" duration="8911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15982000" />
+    <option name="totallyTimeSpent" value="16754000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -414,7 +413,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22473118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22473118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -422,7 +421,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4696449" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -475,59 +474,57 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_checkPhone#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_checkEmail#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_isNullObj#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_isNull#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_checkAllNumber#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getDate#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getTimeStamp#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_timeStampToDateTime#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_dateTimeToTimeStamp#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_UTCTimeToDateTime#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_dateToDate#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_formatBirth#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getBirthAge#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getDataType#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_uniqueArray#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_uniqueArrayAttributes#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_sortArr#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_sortArray#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_customSortArray#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_clearEmptyArray#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_deepCopy#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_setLocalStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getLocalStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getLocalStorageObject#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_removeLocalStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_removeMultipleLocalStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_setSessionStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getSessionStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getSessionStorageObject#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_removeSessionStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_removeMultipleSessionStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_trim#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getSpecStr#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_setStars#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_formatStr#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_insertStr#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_showEllipsis#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_auth#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_isManager#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_debounce#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_throttle#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_handleFileStream#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_goTop#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_disableConsole#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getQueryParam#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_isMobile#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_setTitle#0;n#VueTools#0" expanded="false" />
-            <element signature="e#24835#24857#0" expanded="false" />
-            <element signature="e#25940#25983#0" expanded="false" />
-            <element signature="e#26343#26386#0" expanded="false" />
-            <element signature="e#26735#26881#0" expanded="false" />
+            <element signature="e#0#45#0" expanded="false" />
+            <element signature="e#151#525#0" expanded="false" />
+            <element signature="e#561#929#0" expanded="false" />
+            <element signature="e#968#1180#0" expanded="false" />
+            <element signature="e#1232#1475#0" expanded="false" />
+            <element signature="e#1526#1776#0" expanded="false" />
+            <element signature="e#1882#3599#0" expanded="false" />
+            <element signature="e#3637#3786#0" expanded="false" />
+            <element signature="e#3860#5267#0" expanded="false" />
+            <element signature="e#5323#5619#0" expanded="false" />
+            <element signature="e#5711#6128#0" expanded="false" />
+            <element signature="e#6198#7585#0" expanded="false" />
+            <element signature="e#7635#8425#0" expanded="false" />
+            <element signature="e#8468#8802#0" expanded="false" />
+            <element signature="e#8893#9894#0" expanded="false" />
+            <element signature="e#9933#10945#0" expanded="false" />
+            <element signature="e#11010#11515#0" expanded="false" />
+            <element signature="e#11565#11740#0" expanded="false" />
+            <element signature="e#11778#12040#0" expanded="false" />
+            <element signature="e#12097#12732#0" expanded="false" />
+            <element signature="e#12793#13194#0" expanded="false" />
+            <element signature="e#13230#14093#0" expanded="false" />
+            <element signature="e#14202#14501#0" expanded="false" />
+            <element signature="e#14557#14651#0" expanded="false" />
+            <element signature="e#14712#14917#0" expanded="false" />
+            <element signature="e#14972#15076#0" expanded="false" />
+            <element signature="e#15146#15541#0" expanded="false" />
+            <element signature="e#15606#15880#0" expanded="false" />
+            <element signature="e#15940#16036#0" expanded="false" />
+            <element signature="e#16101#16308#0" expanded="false" />
+            <element signature="e#16369#16475#0" expanded="false" />
+            <element signature="e#16549#16947#0" expanded="false" />
+            <element signature="e#17041#17338#0" expanded="false" />
+            <element signature="e#17496#17752#0" expanded="false" />
+            <element signature="e#17918#18302#0" expanded="false" />
+            <element signature="e#18489#19005#0" expanded="false" />
+            <element signature="e#19171#19734#0" expanded="false" />
+            <element signature="e#19887#20289#0" expanded="false" />
+            <element signature="e#20543#20788#0" expanded="false" />
+            <element signature="e#20914#21404#0" expanded="false" />
+            <element signature="e#21609#22008#0" expanded="false" />
+            <element signature="e#22055#22604#0" expanded="false" />
+            <element signature="e#22778#23709#0" expanded="false" />
+            <element signature="e#23824#24287#0" expanded="false" />
+            <element signature="e#24418#25069#0" expanded="false" />
+            <element signature="e#25115#25455#0" expanded="false" />
+            <element signature="e#25492#25894#0" expanded="false" />
+            <element signature="e#25955#26159#0" expanded="false" />
+            <element signature="e#26231#26274#0" expanded="false" />
+            <element signature="e#26634#26677#0" expanded="false" />
+            <element signature="e#27026#27172#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -577,26 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/vue-luye-tools.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/vue-luye-tools.es5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -611,64 +592,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-407">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/vue-luye-tools.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4775">
+          <caret line="0" column="13441" lean-forward="true" selection-start-line="0" selection-start-column="13441" selection-end-line="0" selection-end-column="13441" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="845" column="5" lean-forward="true" selection-start-line="845" selection-start-column="5" selection-end-line="845" selection-end-column="5" />
+        <state relative-caret-position="50">
+          <caret line="869" column="15" lean-forward="false" selection-start-line="869" selection-start-column="6" selection-end-line="869" selection-end-column="15" />
           <folding>
-            <element signature="n#!!doc;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_checkPhone#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_checkEmail#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_isNullObj#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_isNull#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_checkAllNumber#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getDate#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getTimeStamp#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_timeStampToDateTime#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_dateTimeToTimeStamp#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_UTCTimeToDateTime#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_dateToDate#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_formatBirth#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getBirthAge#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getDataType#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_uniqueArray#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_uniqueArrayAttributes#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_sortArr#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_sortArray#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_customSortArray#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_clearEmptyArray#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_deepCopy#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_setLocalStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getLocalStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getLocalStorageObject#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_removeLocalStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_removeMultipleLocalStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_setSessionStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getSessionStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getSessionStorageObject#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_removeSessionStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_removeMultipleSessionStorage#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_trim#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getSpecStr#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_setStars#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_formatStr#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_insertStr#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_showEllipsis#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_auth#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_isManager#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_debounce#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_throttle#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_handleFileStream#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_goTop#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_disableConsole#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_getQueryParam#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_isMobile#0;n#VueTools#0" expanded="false" />
-            <element signature="n#!!block;n#_setTitle#0;n#VueTools#0" expanded="false" />
-            <element signature="e#24835#24857#0" expanded="false" />
-            <element signature="e#25940#25983#0" expanded="false" />
-            <element signature="e#26343#26386#0" expanded="false" />
-            <element signature="e#26735#26881#0" expanded="false" />
+            <element signature="e#0#45#0" expanded="false" />
+            <element signature="e#151#525#0" expanded="false" />
+            <element signature="e#561#929#0" expanded="false" />
+            <element signature="e#968#1180#0" expanded="false" />
+            <element signature="e#1232#1475#0" expanded="false" />
+            <element signature="e#1526#1776#0" expanded="false" />
+            <element signature="e#1882#3599#0" expanded="false" />
+            <element signature="e#3637#3786#0" expanded="false" />
+            <element signature="e#3860#5267#0" expanded="false" />
+            <element signature="e#5323#5619#0" expanded="false" />
+            <element signature="e#5711#6128#0" expanded="false" />
+            <element signature="e#6198#7585#0" expanded="false" />
+            <element signature="e#7635#8425#0" expanded="false" />
+            <element signature="e#8468#8802#0" expanded="false" />
+            <element signature="e#8893#9894#0" expanded="false" />
+            <element signature="e#9933#10945#0" expanded="false" />
+            <element signature="e#11010#11515#0" expanded="false" />
+            <element signature="e#11565#11740#0" expanded="false" />
+            <element signature="e#11778#12040#0" expanded="false" />
+            <element signature="e#12097#12732#0" expanded="false" />
+            <element signature="e#12793#13194#0" expanded="false" />
+            <element signature="e#13230#14093#0" expanded="false" />
+            <element signature="e#14202#14501#0" expanded="false" />
+            <element signature="e#14557#14651#0" expanded="false" />
+            <element signature="e#14712#14917#0" expanded="false" />
+            <element signature="e#14972#15076#0" expanded="false" />
+            <element signature="e#15146#15541#0" expanded="false" />
+            <element signature="e#15606#15880#0" expanded="false" />
+            <element signature="e#15940#16036#0" expanded="false" />
+            <element signature="e#16101#16308#0" expanded="false" />
+            <element signature="e#16369#16475#0" expanded="false" />
+            <element signature="e#16549#16947#0" expanded="false" />
+            <element signature="e#17041#17338#0" expanded="false" />
+            <element signature="e#17496#17752#0" expanded="false" />
+            <element signature="e#17918#18302#0" expanded="false" />
+            <element signature="e#18489#19005#0" expanded="false" />
+            <element signature="e#19171#19734#0" expanded="false" />
+            <element signature="e#19887#20289#0" expanded="false" />
+            <element signature="e#20543#20788#0" expanded="false" />
+            <element signature="e#20914#21404#0" expanded="false" />
+            <element signature="e#21609#22008#0" expanded="false" />
+            <element signature="e#22055#22604#0" expanded="false" />
+            <element signature="e#22778#23709#0" expanded="false" />
+            <element signature="e#23824#24287#0" expanded="false" />
+            <element signature="e#24418#25069#0" expanded="false" />
+            <element signature="e#25115#25455#0" expanded="false" />
+            <element signature="e#25492#25894#0" expanded="false" />
+            <element signature="e#25955#26159#0" expanded="false" />
+            <element signature="e#26231#26274#0" expanded="false" />
+            <element signature="e#26634#26677#0" expanded="false" />
+            <element signature="e#27026#27172#0" expanded="false" />
           </folding>
         </state>
       </provider>
