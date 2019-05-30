@@ -2,7 +2,7 @@
 ## 日常项目开发中常用的公共函数
 ### 安装
 ```
-# NPM
+# Npm
  npm install vue-luye-tools --save
 
 # Yarn
@@ -148,6 +148,41 @@
     * @return { Object | Array } 深拷贝后的数据
     */
     this._tools._deepCopy(obj)
+
+    /* 去除字符串首尾空格
+    * @method _trim
+    * @param { String } value - 字符串
+    * @return { String } 去除空格后的字符串
+    */
+    this._tools._trim(value)
+
+    /* 截取指定字符指定位置的字符
+    * @method _getSpecStr
+    * @param { 1/String，2/String，3/Number } str - 源字符串，spcStr - 指定字符串，location - 指定位置
+    * @return { String } 截取后的字符串
+    */
+    this._tools._getSpecStr(str, spcStr, location)
+
+    /* 将字符串中多个字符显示为指定字符
+    * @method _setStars
+    * @param { 1/String，2/String，3/Number，4/Number } str - 源字符串，target - 指定字符, start - 开始替换位置, num - 替换多少位
+    * @return { String } 替换后的字符串
+    */
+    this._tools._setStars(str, target, start, num)
+
+    /* 将字符串中指定字符替换为某个字符（frontValArr和backValArr长度需一致）
+    * @method _formatStr
+    * @param { 1/String，2/Array，3/Array } str - 源字符串, frontValArr - 指定字符列表, backValArr - 某个字符列表
+    * @return { String } 替换后的字符串
+    */
+    this._tools._formatStr(str, frontValArr, backValArr)
+
+    /* 将字符串指定位置插入指定字符
+    * @method _insertStr
+    * @param { 1/String，2/Array，3/String } str - 源字符串, indexList - 指定位置列表, insertVal - 插入的指定字符
+    * @return { String } 插入后的字符串
+    */
+    this._tools._insertStr(str = '', indexList = [], insertVal = '')
 ```
 
 
