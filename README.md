@@ -184,6 +184,132 @@
     * @return { String } 插入后的字符串
     */
     this._tools._insertStr(str = '', indexList = [], insertVal = '')
+
+    /* 设置localStorage的值
+    * @method _setLocalStorage
+    * @param { 1/String，2/Any } name - localStorage的key, content - localStorage的值
+    * @return { Boolean } 设置是否成功
+    */
+    this._tools._setLocalStorage(name, content)
+
+    /* 获取localStorage的基本值
+    * @method _getLocalStorage
+    * @param { 1/String } name - localStorage的key
+    * @return { String } 获取的localStorage基本值
+    */
+    this._tools._getLocalStorage(name)
+
+    /* 获取localStorage的引用值
+    * @method _getLocalStorageObject
+    * @param { 1/String } name - localStorage的key
+    * @return { Object } 获取的localStorage引用值
+    */
+    this._tools._getLocalStorageObject(name)
+
+    /* 删除localStorage的值
+    * @method _removeLocalStorage
+    * @param { 1/String } name - localStorage的key
+    * @return { Boolean } 删除是否成功
+    */
+    this._tools._removeLocalStorage(name)
+
+    /* 删除多个localStorage的值
+    * @method _removeMultipleLocalStorage
+    * @param { 1/String } name - localStorage的key列表,接收多个参数，不是数组形式
+    * @return { Boolean } 删除是否成功
+    */
+    this._tools._removeMultipleLocalStorage(name)
+
+    /* 设置sessionStorage的值
+    * @method _setSessionStorage
+    * @param { 1/String，1/Any } name - sessionStorage的key，content - sessionStorage的值
+    * @return { Boolean } 设置是否成功
+    */
+    this._tools._setSessionStorage(name, content)
+
+    /* 获取SessionStorage的基本值
+    * @method _getSessionStorage
+    * @param { 1/String } name - SessionStorage的key
+    * @return { String } 获取的SessionStorage基本值
+    */
+    this._tools._getSessionStorage(name)
+
+    /* 获取SessionStorage的引用值
+    * @method _getSessionStorageObject
+    * @param { 1/String } name - SessionStorage的key
+    * @return { Object } 获取的SessionStorage引用值
+    */
+    this._tools._getSessionStorageObject(name)
+
+    /* 删除SessionStorage的值
+    * @method _removeSessionStorage
+    * @param { 1/String } name - SessionStorage的key
+    * @return { Boolean } 删除是否成功
+    */
+    this._tools._removeSessionStorage(name)
+
+    /* 删除多个SessionStorage的值
+    * @method _removeMultipleSessionStorage
+    * @param { 1/String } name - SessionStorage的key列表,接收多个参数，不是数组形式
+    * @return { Boolean } 删除是否成功
+    */
+    this._tools._removeMultipleSessionStorage(name)
+
+    /* 防抖
+    * @method _debounce
+    * @param { 1/Function，1/String，1/Number } fn - 回调函数，loadingName - 组件loading效果的data值，delay - 延迟毫秒数
+    * @return { Function } 返回回调函数
+    */
+    this._tools._debounce(fn, loadingName = 'showLoading', delay = 1000)
+
+    /* 节流
+    * @method _throttle
+    * @param { 1/Function，2/Number } fn - 回调函数，interval - 延迟毫秒数
+    * @return { Function } 返回回调函数
+    */
+    this._tools._throttle(fn, interval = 100)
+
+    /* 接收文件流并导出（目前只支持excel、word、pdf三种格式）
+    * @method _handleFileStream
+    * @param { 1/Stream，2/String，3/String } fileStream - 文件流，fileType - 文件类型{ 'excel' | 'word' | 'pdf'}，fileName - 文件名
+    * @return { Boolean } 导出是否成功
+    */
+    this._tools._handleFileStream(fileStream, fileType, fileName = 'excel.xlsx')
+
+    /* 禁止打印
+    * @method _disableConsole
+    * @param { 1/String，2/Boolean } key - 禁止console对象下的某个属性名，isAll - 是否禁止所有打印
+    * @return { Boolean } 是否禁止成功
+    */
+    this._tools._disableConsole(key = 'log', isAll = false)
+
+    /* 获取浏览器URL后参数
+    * @method _getQueryParam
+    * @param { 1/String } val - URL的字符串
+    * @return { String |  Boolean } 成功获取后返回字符串，失败后返回 false
+    */
+    this._tools._getQueryParam(val)
+
+    /* 判断是否为移动端设备
+    * @method _isMobile
+    * @param
+    * @return {  Boolean } 是否为移动端设备
+    */
+    this._tools._isMobile()
+
+    /* 判断是否为移动端设备
+    * @method _setTitle
+    * @param { 1/String} title - title的名称
+    * @return {  Boolean } 设置是否成功
+    */
+    this._tools._setTitle(title = 'MHP')
+
+    /* 返回指定容器的顶部
+    * @method _goTop
+    * @param { 1/String，2/Number } scrollDiv - 指定容器，speedVal - 返回速度
+    * @return
+    */
+    this._tools._goTop(scrollDiv, speedVal = 10)
 ```
 
 

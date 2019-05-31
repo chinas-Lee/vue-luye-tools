@@ -844,9 +844,9 @@ const Tools = {
         }
     },
     // 设置title
-    _setTitle (title, defaultTitle = 'MHP') {
+    _setTitle (title = 'MHP') {
         try {
-            title ? document.title = title : document.title = defaultTitle
+            document.title = title
             return true
         } catch (e) {
             console.log(e)
