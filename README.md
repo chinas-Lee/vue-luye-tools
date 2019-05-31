@@ -1,6 +1,6 @@
 # vue-luye-tools
 ## 日常项目开发中常用的公共函数
-## Version 1.0.1
+## Version 1.0.4
 ### 安装
 ```
 # Npm
