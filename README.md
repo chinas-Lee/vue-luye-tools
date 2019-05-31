@@ -297,10 +297,10 @@
     */
     this._tools._isMobile()
 
-    /* 判断是否为移动端设备
+    /* 设置浏览器的title
     * @method _setTitle
     * @param { 1/String} title - title的名称
-    * @return {  Boolean } 设置是否成功
+    * @return { Boolean } 设置是否成功
     */
     this._tools._setTitle(title = 'MHP')
 
@@ -310,6 +310,20 @@
     * @return
     */
     this._tools._goTop(scrollDiv, speedVal = 10)
+
+    /* 返回是否为指定人员
+    * @method _isManager
+    * @param { 1/Array，2/String，3/String } roleListType - 指定的人员列表，sessionKey - session中的属性，roleKey - 是否需要在sessionKey中下属性中查找对应的属性
+    * @return { Boolean } 是否为指定人员
+    */
+    this._tools._isManager(roleListType = ['Super_Admin', 'Hospital_Admin'], sessionKey = 'userData', roleKey = 'roleList')
+
+    /* 获取文件后缀
+    * @method _getFileSuffix
+    * @param { 1/String } fileName - 文件名
+    * @return { String } 文件后缀
+    */
+    this._tools._getFileSuffix(fileName)
 ```
 
 

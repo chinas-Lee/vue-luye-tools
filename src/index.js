@@ -11,10 +11,8 @@ const Tools = {
     // 验证手机号
     _checkPhone (val) {
         try {
-            const reg = /^[1][3,4,5,7,8][0-9]{9}$/
-            if (typeof val !== 'number' && typeof val !== 'string') {
-                return false
-            }
+            if (typeof val !== 'number' && typeof val !== 'string') return false
+            let reg = /^[1][3,4,5,7,8][0-9]{9}$/
             if (!reg.test(val)) {
                 return false
             }
@@ -27,22 +25,21 @@ const Tools = {
     // 验证邮箱
     _checkEmail (val) {
         try {
+            if (typeof val !== 'string') return false
             let reg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
-            if (typeof val !== 'string') {
-                return false
-            }
             if (!reg.test(val)) {
                 return false
             }
             return true
         } catch (err) {
             console.log(err)
-            return 'error'
+            return false
         }
     },
     // 判断是否为空对象
     _isNullObj (obj) {
         try {
+            if (Object.prototype.toString.call(obj) !== '[object Object]') return false
             for (let item in obj) {
                 return false
             }
@@ -55,9 +52,7 @@ const Tools = {
     // 判断是否为空 ''/null/undefined
     _isNull (val) {
         try {
-            if (val === '' || val === null || val === undefined) {
-                return true
-            }
+            if (val === '' || val === null || val === undefined) return false
             return false
         } catch (err) {
             console.log(err)
@@ -67,6 +62,7 @@ const Tools = {
     // 验证输入值是否全由数字组成
     _checkAllNumber (value) {
         try {
+            if ((value !== 0 && !value) || typeof value !== 'string' || typeof value !== 'number') return false
             let res = /^[0-9]{1,20}$/
             if (res.exec(+value)) {
                 return true
@@ -77,7 +73,6 @@ const Tools = {
             return false
         }
     },
-
     /*
      * 日期时间函数
      * return String
@@ -85,6 +80,7 @@ const Tools = {
     // 获取当前日期时间字符串
     _getDate (tag = 'datetime') {
         try {
+            if (typeof tag !== 'string') return false
             let flag = tag
             let currentDate = new Date()
             let res = ''
@@ -107,20 +103,17 @@ const Tools = {
     // 获取当前时间戳
     _getTimeStamp () {
         try {
-            return +new Date() || false
+            return +new Date()
         } catch (err) {
             console.log(err)
             return false
         }
     },
     // 将时间戳转化为日期时间格式
-    _timeStampToDateTime (value, tag = 'dateTime') {
+    _timeStampToDateTime (value, tagVal = 'dateTime') {
         try {
-            if (!value) {
-                return false
-            }
-            let tagVal = tag
-            let timeStamp = new Date(parseInt(value))
+            if (!value || typeof value !== 'number' || tagVal !== 'string') return false
+            let timeStamp = new Date(value)
             let year = timeStamp.getFullYear()
             let month = ((timeStamp.getMonth() + 1).toString().length === 2 ? (timeStamp.getMonth() + 1) : '0' + (timeStamp.getMonth() + 1))
             let day = (timeStamp.getDate().toString().length === 2 ? timeStamp.getDate() : '0' + timeStamp.getDate())
@@ -138,7 +131,7 @@ const Tools = {
                 default:
                     res = year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds
             }
-            return res || false
+            return res
         } catch (err) {
             console.log(err)
             return false
@@ -147,9 +140,7 @@ const Tools = {
     // 将日期时间格式转化为时间戳
     _dateTimeToTimeStamp (value) {
         try {
-            if (!value) {
-                return false
-            }
+            if (!value || typeof value !== 'string') return false
             let dateTime = new Date(value)
             let res = Date.parse(dateTime)
             return res || false
@@ -161,27 +152,21 @@ const Tools = {
     // 将2016-01-02T16:00:00.000Z时间格式转化为时间日期格式
     _UTCTimeToDateTime (val, flag = 'time') {
         try {
-            if (!val) {
-                return false
-            }
+            if (!val || typeof val !== 'string' || typeof flag !== 'string') return false
             if (val.indexOf('T') !== -1 && val.indexOf('Z') !== -1) {
                 val = val.replace(/T/, ' ')
                 val = flag === 'date' ? val.substring(0, 10) : val.substring(0, 19)
             }
-            return val || ''
+            return val || false
         } catch (err) {
             console.log(err)
             return false
         }
     },
     // 将new Date时间转化为时间格式
-    _dateToDate (value, tag = 'dateTime') {
+    _dateToDate (timeStamp, tagVal = 'dateTime') {
         try {
-            if (!value) {
-                return false
-            }
-            let tagVal = tag
-            let timeStamp = value
+            if (!timeStamp || typeof tagVal !== 'string') return false
             let year = timeStamp.getFullYear()
             let month = ((timeStamp.getMonth() + 1).toString().length === 2 ? (timeStamp.getMonth() + 1) : '0' + (timeStamp.getMonth() + 1))
             let day = (timeStamp.getDate().toString().length === 2 ? timeStamp.getDate() : '0' + timeStamp.getDate())
@@ -199,7 +184,7 @@ const Tools = {
                 default:
                     res = year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds
             }
-            return res || false
+            return res
         } catch (err) {
             console.log(err)
             return false
@@ -207,11 +192,15 @@ const Tools = {
     },
     // 格式化生日
     _formatBirth (val, length = 8) {
-        let resData = {
-            value: val.target.value,
-            rawValue: val.target.rawValue
-        }
         try {
+            if (!val || !val.target || !val.target.value || !val.target.rawValue || typeof val.target.rawValue !== 'string' || typeof val.target.value !== 'string' || typeof length !== 'number') return {
+                value: false,
+                rawValue: false
+            }
+            let resData = {
+                value: val.target.value,
+                rawValue: val.target.rawValue
+            }
             let year = new Date().getFullYear()
             let rawValue = val.target.rawValue
             let eventYear = rawValue.length === length ? +rawValue.substring(4) : 0
@@ -226,22 +215,29 @@ const Tools = {
             return resData
         } catch (e) {
             console.log(e)
-            return resData
+            return {
+                value: false,
+                rawValue: false
+            }
         }
     },
     // 获取年龄
     _getBirthAge (eventYear) {
         let resData = {
-            age: '-'
+            age: false
         }
-        if (eventYear.length !== 4) {
+        try {
+            if (!eventYear || typeof eventYear !== 'string' || typeof eventYear !== 'number') return resData
+            if (typeof eventYear === 'string' && eventYear.length !== 4) return resData
+            let birthYear = +eventYear
+            let year = new Date().getFullYear()
+            let age = year - birthYear + 1
+            age > 0 ? resData.age = age : resData.age = ''
+            return resData
+        } catch (e) {
+            console.log(e)
             return resData
         }
-        let birthYear = +eventYear
-        let year = new Date().getFullYear()
-        let age = year - birthYear + 1
-        age > 0 ? resData.age = age : resData.age = '-'
-        return resData
     },
 
     /*
@@ -277,7 +273,7 @@ const Tools = {
                 default:
                     res = false
             }
-            return res || false
+            return res
         } catch (err) {
             console.log(err)
             return false
@@ -286,6 +282,7 @@ const Tools = {
     // 一维数组去重
     _uniqueArray (arr) {
         try {
+            if (!Array.isArray(arr)) return false
             // Array.from兼容写法
             if (Array.from) {
                 return Array.from(new Set(arr))
@@ -308,7 +305,7 @@ const Tools = {
                         }
                     }
                 }
-                return res || false
+                return res
             }
         } catch (err) {
             console.log(err)
@@ -318,9 +315,7 @@ const Tools = {
     // 数组以对象中某个属性去重
     _uniqueArrayAttributes (arr, attrName) {
         try {
-            if (_getDataType(arr) !== 'Array' || !attrName) {
-                return false
-            }
+            if (!Array.isArray(arr) || !attrName || typeof attrName !== 'string') return false
             let tagObj = {}
             let resData = []
             arr.forEach(item => {
@@ -348,10 +343,8 @@ const Tools = {
     // 数组排序
     _sortArray (arrVal) {
         try {
-            if (_getDataType(arrVal) !== 'Array') {
-                return false
-            }
-            arrVal.sort(_sortArr)
+            if (!Array.isArray(arrVal)) return false
+            arrVal.sort(this._sortArr)
             return this
         } catch (err) {
             console.log(err)
@@ -360,12 +353,9 @@ const Tools = {
     },
     // 自定义数组排序
     _customSortArray (arrVal, indexVal) {
-        if (_getDataType(arrVal) !== 'Array') {
-            return false
-        }
         try {
-            arrVal.sort(
-                (obj1, obj2) => {
+            if (!Array.isArray(arrVal) || typeof indexVal !== 'number') return false
+            arrVal.sort((obj1, obj2) => {
                     let val1 = obj1[indexVal]
                     let val2 = obj2[indexVal]
                     if (val1 < val2) {
@@ -377,7 +367,7 @@ const Tools = {
                     }
                 }
             )
-            return this
+            return arrVal
         } catch (err) {
             console.log(err)
             return false
@@ -386,9 +376,7 @@ const Tools = {
     // 去除数组的null、undefined、''数据
     _clearEmptyArray (arr) {
         try {
-            if (_getDataType(arr) !== 'Array') {
-                return false
-            }
+            if (!Array.isArray(arr)) return false
             let resData = []
             arr.forEach((item) => {
                 item !== null && item !== undefined && item !== '' && resData.push(item)
@@ -410,12 +398,12 @@ const Tools = {
                     if (obj instanceof Array) {
                         newObject = []
                         for (let i = 0, len = obj.length; i < len; i++) {
-                            newObject.push(_deepCopy(obj[ i ]))
+                            newObject.push(this._deepCopy(obj[ i ]))
                         }
                     } else {
                         newObject = {}
                         for (let j in obj) {
-                            newObject[ j ] = _deepCopy(obj[ j ])
+                            newObject[ j ] = this._deepCopy(obj[ j ])
                         }
                     }
                 }
@@ -437,7 +425,7 @@ const Tools = {
     _setLocalStorage (name, content) {
         try {
             if (!name) return false
-            typeof content !== 'string' && (content = JSON.stringify(content))
+            Object.prototype.toString.call(content) === '[object Object]' && (content = JSON.stringify(content))
             window.localStorage.setItem(name, content)
             return true
         } catch (e) {
@@ -448,7 +436,7 @@ const Tools = {
     // 获取字符串的localStorage
     _getLocalStorage (name) {
         if (!name) return false
-        return window.localStorage.getItem(name) || ''
+        return window.localStorage.getItem(name)
     },
     // 获取对象的localStorage
     _getLocalStorageObject (name) {
@@ -469,7 +457,7 @@ const Tools = {
     // 删除多个localStorage
     _removeMultipleLocalStorage (args = []) {
         try {
-            if (args.length <= 0) return false
+            if (!Array.isArray(args) || args.length <= 0) return false
             // 清空无效KEY
             args = this._clearEmptyArray(args) || []
             // 去重参数
@@ -486,7 +474,7 @@ const Tools = {
     _setSessionStorage (name, content) {
         try {
             if (!name) return false
-            typeof content !== 'string' && (content = JSON.stringify(content))
+            Object.prototype.toString.call(content) === '[object Object]' && (content = JSON.stringify(content))
             window.sessionStorage.setItem(name, content)
             return true
         } catch (e) {
@@ -496,7 +484,7 @@ const Tools = {
     // 获取字符串的sessionStorage
     _getSessionStorage (name) {
         if (!name) return false
-        return window.sessionStorage.getItem(name) || ''
+        return window.sessionStorage.getItem(name)
     },
     // 获取对象的sessionStorage
     _getSessionStorageObject (name) {
@@ -517,7 +505,7 @@ const Tools = {
     // 删除多个sessionStorage
     _removeMultipleSessionStorage (args = []) {
         try {
-            if (args.length <= 0) return false
+            if (!Array.isArray(args) || args.length <= 0) return false
             // 清空无效KEY
             args = this._clearEmptyArray(args) || []
             // 去重参数
@@ -538,6 +526,7 @@ const Tools = {
     // 去除字符串首尾空格
     _trim (value = '') {
         try {
+            if (typeof value !== 'string') return false
             // String.prototype.trim兼容性写法
             if (String.prototype.trim) {
                 return value.trim()
@@ -554,11 +543,9 @@ const Tools = {
      * spcStr - 指定字符串分割
      * location - 第几段
      * */
-    _getSpecStr (str = '', spcStr = '', location = 0) {
+    _getSpecStr (str, spcStr, location = 0) {
         try {
-            if (!str || typeof str !== 'string') {
-                return false
-            }
+            if (!str || typeof str !== 'string' || !spcStr || typeof spcStr !== 'string' || (location && typeof location !== 'number')) return false
             return str.split(spcStr)[location] || ''
         } catch (err) {
             console.log(err)
@@ -574,9 +561,7 @@ const Tools = {
      * */
     _setStars (str, target, start, num) {
         try {
-            if (!str || typeof str !== 'string') {
-                return false
-            }
+            if (!str || typeof str !== 'string' || !target || typeof target !== 'string' || typeof start !== 'number' || start < 0 || typeof num !== 'number' || num < start) return false
             let res = str.split('')
             for (let i = 0; i < num; i++) {
                 res.splice(start + i, 1, target)
@@ -595,13 +580,10 @@ const Tools = {
      * */
     _formatStr (str, frontVal, backVal) {
         try {
-            if (str === '' || frontVal.length <= 0 || backVal.length <= 0) {
-                return false
-            }
-            typeof frontVal === 'string' && typeof backVal === 'string'
-                ? str = str.replace(new RegExp(frontVal, 'g'), backVal)
-                : frontVal.forEach((item, index) => { str = str.replace(new RegExp(item, 'g'), backVal[index]) })
-            return str || ''
+            if (!str || typeof str !== 'string' || (!Array.isArray(frontVal) && typeof frontVal !== 'string') || frontVal.length <= 0 || (!Array.isArray(backVal) && typeof backVal !== 'string') || backVal.length <= 0) return false
+            if (typeof frontVal == 'string' && typeof backVal !== 'string') return str.replace(new RegExp(frontVal, 'g'), backVal)
+            if (!Array.isArray(frontVal) && !Array.isArray(backVal)) return frontVal.forEach((item, index) => { str = str.replace(new RegExp(item, 'g'), backVal[index]) })
+            return false
         } catch (err) {
             console.log(err)
             return false
@@ -615,9 +597,7 @@ const Tools = {
      * */
     _insertStr (str = '', indexList = [], insertVal = '') {
         try {
-            if (!str || typeof str !== 'string' || indexList.length <= 0 || !insertVal) {
-                return str
-            }
+            if (!str || typeof str !== 'string' || !Array.isArray(indexList) || typeof insertVal !== 'string') return false
             let newStr = str.substring(0, indexList[0])
             for (let i = 0, len = indexList.length; i < len; i++) {
                 i !== indexList.length - 1 ? newStr += insertVal + str.substring(indexList[i], indexList[i] + 2) : newStr += insertVal + str.substring(indexList[i])
@@ -625,7 +605,7 @@ const Tools = {
             return newStr
         } catch (e) {
             console.log(e)
-            return str
+            return false
         }
     },
     /*
@@ -636,12 +616,10 @@ const Tools = {
      * */
     _showEllipsis (str = '', index = 0, endStr = '') {
         try {
-            if (!str || typeof str !== 'string' || typeof index !== 'number' || index >= str.length || index < 0 || typeof endStr !== 'string') {
-                return ''
-            }
+            if (!str || typeof str !== 'string' || typeof index !== 'number' || index >= str.length || index < 0 || typeof endStr !== 'string') return ''
             str = str.substr(0, index) + '...'
             endStr && (str += endStr)
-            return str || ''
+            return str
         } catch (e) {
             console.log(e)
             return ''
@@ -663,7 +641,7 @@ const Tools = {
         try {
             // 配置需要登录信息验证并且登录信息不存在，则跳回首页
             !noLoginAuth && !_getSessionStorage('idToken') && next(params)
-            return true
+            return false
         } catch (e) {
             console.log(e)
             return false
@@ -672,13 +650,15 @@ const Tools = {
     /*
      * 是否为管理员
      * roleListType - 角色列表
+     * sessionKey - session中的key
+     * roleKey - 角色的属性
      * */
-    _isManager (roleListType = ['Super_Admin', 'Hospital_Admin']) {
+    _isManager (roleListType = ['Super_Admin', 'Hospital_Admin'], sessionKey = 'userData', roleKey = 'roleList') {
         try {
-            let roleList = _getSessionStorageObject('userData').roleList || []
+            if (!Array.isArray(roleListType) || !sessionKey || typeof sessionKey !== 'string') return false
+            let roleList = roleKey ? this._getSessionStorageObject(sessionKey)[roleKey] || [] : this._getSessionStorageObject(sessionKey) || []
             !Array.isArray(roleList) && (roleList = [])
             for (let i = 0, len = roleList.length; i < len; i++) {
-                // 判断是否为超级管理员和医院管理员
                 if (roleListType.includes(roleList[i])) {
                     return true
                 }
@@ -705,7 +685,7 @@ const Tools = {
         return function () {
             let _this = this
             // 响应loading状态
-            !this[loadingName] && (this[loadingName] = true)
+            !this[loadingName] === false && (this[loadingName] = true)
             let args = arguments
             timer !== null && clearTimeout(timer)
             timer = setTimeout(() => {
@@ -743,9 +723,8 @@ const Tools = {
      */
     _handleFileStream (fileStream, fileType, fileName = 'excel.xlsx') {
         try {
-            if (!fileStream || !fileType) {
-                return false
-            }
+            let fileTypeList = ['excel', 'word', 'pdf']
+            if (!fileStream || !fileType || typeof fileType !== 'string' || !fileTypeList.includes(fileType) || typeof fileName !== 'string') return false
             // 配置各大文件类型的文件流
             const FILE_TYPE_TYPE = {
                 excel: {type: 'application/vnd.ms-excel'},
@@ -775,6 +754,7 @@ const Tools = {
      */
     _goTop (scrollDiv, speedVal = 10) {
         try {
+            if (!scrollDiv || !scrollDiv.scrollTop || typeof speedVal !== 'number') return false
             let timer = setInterval(() => {
                 let top = scrollDiv.scrollTop
                 top -= top * 0.05
@@ -785,6 +765,7 @@ const Tools = {
                     clearInterval(timer)
                 }
             }, speedVal)
+            return true
         } catch (err) {
             console.log(err)
             return false
@@ -797,6 +778,7 @@ const Tools = {
      */
     _disableConsole (key = 'log', isAll = false) {
         try {
+            if (typeof key !== 'string' || Object.prototype.toString.call(isAll) !== '[object Boolean]') return false
             let consoleObject = window.console
             if (!consoleObject) {
                 return false
@@ -821,10 +803,10 @@ const Tools = {
     // 获取浏览器URL后参数
     _getQueryParam (val) {
         try {
+            if (!val || typeof val !== 'string') return false
             let reg = new RegExp('(^|&)' + val + '=([^&]*)(&|$)')
             let r = window.location.search.substr(1).match(reg)
-            let res
-            r !== null ? res = decodeURI(r[2]) : res = ''
+            let res = r !== null ? decodeURI(r[2]) : ''
             return res
         } catch (err) {
             console.log(err)
@@ -846,6 +828,7 @@ const Tools = {
     // 设置title
     _setTitle (title = 'MHP') {
         try {
+            if (typeof title !== 'string') return false
             document.title = title
             return true
         } catch (e) {
@@ -853,6 +836,18 @@ const Tools = {
             return false
         }
     },
+    // 获取文件后缀
+    _getFileSuffix (fileName) {
+        try {
+            if (!fileName || typeof fileName !== 'string' || fileName.indexOf('.') === -1) return false
+            let index= fileName.lastIndexOf('.');
+            let suffix = fileName.substr(index + 1);
+            return suffix
+        } catch (e) {
+            console.log(e)
+            return false
+        }
+    }
 }
 
 const config = {
