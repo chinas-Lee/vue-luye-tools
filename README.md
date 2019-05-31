@@ -13,7 +13,11 @@
 ```
  import Vue from 'vue'
  import vueTools from 'vue-luye-tools'
- Vue.use(vueTools)
+ Vue(vue.useTools)
+```
+## 注意
+```
+ 当使用非判断性方法时，如果返回值为false，则表示程序处理错误，业务代码中需注意处理逻辑
 ```
 ## API
 ```
