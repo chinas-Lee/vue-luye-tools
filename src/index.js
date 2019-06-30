@@ -112,7 +112,7 @@ const Tools = {
     // 将时间戳转化为日期时间格式
     _timeStampToDateTime (value, tagVal = 'dateTime') {
         try {
-            if (!value || typeof value !== 'number' || tagVal !== 'string') return false
+            if (!value || typeof value !== 'number' || typeof tagVal !== 'string') return false
             let timeStamp = new Date(value)
             let year = timeStamp.getFullYear()
             let month = ((timeStamp.getMonth() + 1).toString().length === 2 ? (timeStamp.getMonth() + 1) : '0' + (timeStamp.getMonth() + 1))
